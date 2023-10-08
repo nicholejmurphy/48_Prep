@@ -12,7 +12,7 @@ function guessingGame() {
     let status = "";
     if (!hasWon) {
       if (num === target) {
-        status = `You win! You found ${target} in ${guessCount} guesses`;
+        status = `You win! You found ${target} in ${guessCount} guesses.`;
         // clear guessCount
         guessCount = 0;
         hasWon = true;
@@ -22,7 +22,7 @@ function guessingGame() {
         status = `${num} is too high!`;
       }
     } else {
-      status = "The game is over, you have already won!";
+      status = "The game is over, you already won!";
     }
     return status;
   };
